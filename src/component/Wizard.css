@@ -1,0 +1,43 @@
+.form {
+  margin: 5%;
+  top: 0%;
+}
+.stepper-container {
+  display: flex;
+  flex-direction: row;
+}
+.stepper {
+  width: 33.33%;
+  height: 15%;
+  border: 1px solid black;
+}
+
+.stepper-header {
+  margin: 2% 0%;
+  padding: 10% 0%;
+  width: 100%;
+  height: 40%;
+  border: 1px solid black;
+}
+.form-container {
+}
+
+.prev {
+  float: left;
+}
+.next {
+  float: right;
+}
+
+.light {
+  color: red;
+  background-color: white;
+}
+.dark {
+  color: lightgreen;
+  background-color: gray;
+}
+.selected {
+  background-color: black;
+  color: white;
+}
