@@ -1,15 +1,19 @@
-import React from 'react'
+import React from "react";
+import { useFormik } from "formik";
+
 interface infoValue {
-    name: string;
+  name: string;
 }
 
-function Info(infoObj:infoValue) {
-    const {name} = infoObj
-    return (
-        <div>
-        <h1>{name}</h1>
-        </div>
-    )
+function Info(infoObj: infoValue) {
+  const { name } = infoObj;
+  return (
+    <>
+      <label htmlFor="firstName">{name}</label>
+      <br></br>
+      <input id="firstName" name="firstName" type="text" />
+    </>
+  );
 }
 
-export default Info
+export default Info;

@@ -19,8 +19,6 @@
   height: 40%;
   border: 1px solid black;
 }
-.form-container {
-}
 
 .prev {
   float: left;
@@ -29,14 +27,6 @@
   float: right;
 }
 
-.light {
-  color: red;
-  background-color: white;
-}
-.dark {
-  color: lightgreen;
-  background-color: gray;
-}
 .selected {
   background-color: black;
   color: white;
