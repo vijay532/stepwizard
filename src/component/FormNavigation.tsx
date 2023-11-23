@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { FormikValues } from "formik";
-
+import "./FormNavigation.css";
 interface Props {
   hasPrevious?: boolean;
   onBackClick: (values: FormikValues) => void;
@@ -9,16 +9,10 @@ interface Props {
 
 const FormNavigation: FC<Props> = (props) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        marginTop: 50,
-        justifyContent: "space-between",
-      }}
-    >
+    <div className="form-navigation">
       {props.hasPrevious && (
         <button type="button" onClick={props.onBackClick}>
-          Back
+          {"back"}
         </button>
       )}
       <button type="submit">{props.isLastStep ? "Submit" : "Next"}</button>
